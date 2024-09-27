@@ -5,7 +5,7 @@
 package proyectocine.clasesbeans;
 
 import java.io.Serializable;
-
+import java.util.ArrayList;
 /**
  *
  * @author kitty
@@ -15,7 +15,8 @@ public class Funcion implements Serializable {
     private int id_funcion;
     private TipoDeFuncion tipoDeFuncion;
     private Sala sala;
-    private Pelicula pelicula;
+    //private Pelicula pelicula;
+    private ArrayList<Pelicula> peliculas;
     private String fechaDeFuncion;
     private String horario;
 
@@ -62,12 +63,20 @@ public class Funcion implements Serializable {
         this.sala = sala;
     }
 
-    public Pelicula getPelicula() {
+    public ArrayList<Pelicula> getPelicula() {
+        return peliculas;
+    }
+
+    public void setPelicula(ArrayList<Pelicula> pelicula) {
+        this.peliculas = pelicula;
+    }
+
+    /*public Pelicula getPelicula() {
         return pelicula;
     }
 
     public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
-    }
+    }*/
 
 }
