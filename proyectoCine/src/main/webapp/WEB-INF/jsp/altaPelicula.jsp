@@ -21,6 +21,7 @@
                         class="form-control"
                         placeholder="Nombre de la película"
                         name="nombre"
+                        id ="nombre"
                         aria-label="Nombre de la película"
                         required
                         />
@@ -34,6 +35,7 @@
                         class="form-control"
                         placeholder="Duración de la película"
                         name="duracion"
+                        id="duracion"
                         aria-label="Duración"
                         required
                         />
@@ -53,21 +55,13 @@
                         class="form-control"
                         placeholder="Ej: Todo público, +13"
                         name="apto_para"
+                        id="apto_para"
                         required
                         />
                 </div>
 
-                <!-- Descripción corta -->
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon4">Descripción corta</span>
-                    <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Breve descripción"
-                        name="descripcion_corta"
-                        required
-                        />
-                </div>
+
+
 
                 <!-- Director -->
                 <div class="input-group mb-3">
@@ -77,6 +71,7 @@
                         class="form-control"
                         placeholder="Nombre del director"
                         name="director"
+                        id="director"
                         required
                         />
                 </div>
@@ -107,7 +102,8 @@
                                 type="file"
                                 class="form-control d-none"
                                 id="customFile1"
-                                name="poster"
+                                name="img_pelicula"
+                                id="img_pelicula"
                                 accept="image/*"
                                 onchange="displaySelectedImage(event, 'selectedImage')"
                                 required
